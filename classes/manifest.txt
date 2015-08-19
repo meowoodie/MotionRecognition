@@ -1,0 +1,3 @@
+Main-Class: com.senz.MotionRecognition
+Class-Path: lib/weka.jar
+
