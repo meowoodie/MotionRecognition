@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_motionrecognition" default="compile.module.motionrecognition">
+  <dirname property="module.motionrecognition.basedir" file="${ant.file.module_motionrecognition}"/>
+  
+  <property name="module.jdk.home.motionrecognition" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.motionrecognition" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.motionrecognition" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.motionrecognition" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="motionrecognition.output.dir" value="undefined"/>
+  <property name="motionrecognition.testoutput.dir" value="undefined"/>
+  
+  <path id="motionrecognition.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="motionrecognition.module.production.classpath"/>
+  
+  <path id="motionrecognition.runtime.production.module.classpath"/>
+  
+  <path id="motionrecognition.module.classpath"/>
+  
+  <path id="motionrecognition.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.motionrecognition">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.motionrecognition">
+    <patternset refid="excluded.from.module.motionrecognition"/>
+  </patternset>
+  
+  
+  <target name="compile.module.motionrecognition" depends="compile.module.motionrecognition.production,compile.module.motionrecognition.tests" description="Compile module MotionRecognition"/>
+  
+  <target name="compile.module.motionrecognition.production" depends="register.custom.compilers" description="Compile module MotionRecognition; production classes"/>
+  
+  <target name="compile.module.motionrecognition.tests" depends="register.custom.compilers,compile.module.motionrecognition.production" description="compile module MotionRecognition; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.motionrecognition" description="cleanup module">
+    <delete dir="${motionrecognition.output.dir}"/>
+    <delete dir="${motionrecognition.testoutput.dir}"/>
+  </target>
+</project>
