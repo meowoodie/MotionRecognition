@@ -1,0 +1,5 @@
+org/senz/MotionRecognition/filter/ClassificationFilter.class
+org/senz/MotionRecognition/filter/TrainingFilter.class
+org/senz/MotionRecognition/MotionVectors.class
+org/senz/MotionRecognition/utils/StatisticFeature.class
+org/senz/MotionRecognition/MotionRecognition.class
