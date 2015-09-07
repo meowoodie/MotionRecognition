@@ -34,13 +34,14 @@ import org.senz.MotionRecognition.*
 MotionRecognition mr;
 mr = new MotionRecognition();
 // Classification
-mr.classify("train6.txt", "LibSVM.model");
+String motion_type;
+motion_type = mr.classify("train6.txt", "LibSVM.model");
 ```
 
 the first parameter of method "classify" is a file directory of unlabeld sensor data sample. Every tuple in this file is a json which contains informations including timestamp, acc data, accuracy and so on("status" attribute is optional).
 the second parameter is a file directory of model file which used to classify motion type.
 
-Todo
+To do
 ---
 The project is just a proto-type used in Android program (or other Java project). 
 There are still a lot of problems which deserve to be promoted in this project.
