@@ -1,0 +1,14 @@
+@relation classification-org.senz.MotionRecognition.filter.ClassificationFilter
+
+@attribute average numeric
+@attribute std numeric
+@attribute max numeric
+@attribute min numeric
+@attribute status {Walking,Running,Sitting,Driving,Riding}
+
+@data
+127.696146,110.038527,3073.909269,1.088425,Sitting
+12.696146,130.038527,3573.909269,2.088425,Walking
+1272.696146,140.038527,3173.909269,0.088425,Running
+7.696146,190.038527,5073.909269,0.888425,Riding
+444.696146,200.038527,1073.909269,0.188425,Driving

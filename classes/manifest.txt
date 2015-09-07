@@ -1,3 +1,0 @@
-Main-Class: org.senz.MotionRecognition
-Class-Path: weka.jar libsvm.jar java-json.jar
-
